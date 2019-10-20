@@ -101,4 +101,4 @@ const styles = StyleSheet.create({
     color: '#3E4A59',
   },
 });
-export {CardInput, TextField, TextFieldRow};
+export {TextField, TextFieldRow};

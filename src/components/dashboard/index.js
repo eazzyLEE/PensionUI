@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, TouchableOpacity, View} from 'react-native';
+import {StatusBar, StyleSheet, TouchableOpacity, View} from 'react-native';
 import {FooterTabText} from '../../components/common';
 import {Button, Footer, FooterTab} from 'native-base';
 import {dashboardStyles as styles} from './styles';
@@ -13,6 +13,10 @@ import {
 import Home from './Home';
 
 export default class Dashboard extends Component {
+  componentDidMount() {
+    StatusBar.setBackgroundColor('#edf5f7');
+    StatusBar.setBarStyle('dark-content');
+  }
   render() {
     return (
       <View style={styles.background}>
