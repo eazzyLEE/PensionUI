@@ -1,7 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, TextInput, View} from 'react-native';
 import {Form, Item, Input, Label} from 'native-base';
-import {TextMask} from 'react-native-masked-text';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -77,24 +76,6 @@ const TextFieldRow = ({
           value={rightValue}
         />
       </Item>
-    </View>
-  );
-};
-
-const CardInput = ({label, onChangeText, value}) => {
-  return (
-    <View>
-      <BookText
-        title={label}
-        style={[styles.label, {marginTop: hp('5.1%'), marginLeft: 0}]}
-      />
-      <TextMask
-        type={'credit-card'}
-        style={{borderBottomWidth: 0.5, marginTop: hp('3%')}}
-        value={value}
-        onChangeText={onChangeText}
-        // mask={'0000 0000 0000 0000'}
-      />
     </View>
   );
 };
