@@ -1,24 +1,45 @@
 import React from 'react';
 import {StyleSheet, Text, TextInput, View} from 'react-native';
-import { Form, Item, Input, Label } from 'native-base'
+import {Form, Item, Input, Label} from 'native-base';
+import {TextMask} from 'react-native-masked-text';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import {BookText} from './Text';
 
 const TextField = ({
+  borderColor,
+  onBlur,
+  onFocus,
   label,
   labelStyle,
   onChangeText,
   secureTextEntry,
   style,
   value,
+  focus,
+  maxLength,
 }) => {
   return (
     <View style={[styles.view, style]}>
-      <Item floatingLabel style={{ width: wp('84%')}}>
+      <Item
+        floatingLabel
+        style={{
+          width: wp('84%'),
+          borderColor: focus ? '#32BD58' : '#979797', //'#32BD58',
+          borderBottomWidth: focus ? 1.5 : 0.5,
+        }}>
         <Label style={styles.label}>{label}</Label>
-        <Input style={styles.input} value={value} secureTextEntry={secureTextEntry} onChangeText={onChangeText}/>
+        <Input
+          style={styles.input}
+          value={value}
+          secureTextEntry={secureTextEntry}
+          onChangeText={onChangeText}
+          maxLength={maxLength}
+          onFocus={onFocus}
+          onBlur={onBlur}
+        />
       </Item>
     </View>
   );
@@ -32,37 +53,66 @@ const TextFieldRow = ({
   rightOnChangeText,
   rightValue,
   rightLabel,
+  maxLength,
   secureTextEntry,
   style,
   value,
 }) => {
   return (
-  <View style={[styles.row, style]}>
-    <Item floatingLabel style={{ width: wp('39.3%')}}>
-      <Label style={styles.label}>{leftLabel}</Label>
-      <Input style={styles.input} onChangeText={leftOnChangeText} value={leftValue}/>
-    </Item>
-    <Item floatingLabel style={{ width: wp('39.3%'), marginLeft: wp('5.6%') }}>
-      <Label style={styles.label}>{rightLabel}</Label>
-      <Input style={styles.input} onChangeText={rightOnChangeText} value={rightValue}/>
-    </Item>
-  </View>
-  )
-}
+    <View style={[styles.row, style]}>
+      <Item floatingLabel style={{width: wp('39.3%')}}>
+        <Label style={styles.label}>{leftLabel}</Label>
+        <Input
+          style={styles.input}
+          onChangeText={leftOnChangeText}
+          value={leftValue}
+          maxLength={maxLength}
+        />
+      </Item>
+      <Item floatingLabel style={{width: wp('39.3%'), marginLeft: wp('5.6%')}}>
+        <Label style={styles.label}>{rightLabel}</Label>
+        <Input
+          style={styles.input}
+          onChangeText={rightOnChangeText}
+          value={rightValue}
+        />
+      </Item>
+    </View>
+  );
+};
+
+const CardInput = ({label, onChangeText, value}) => {
+  return (
+    <View>
+      <BookText
+        title={label}
+        style={[styles.label, {marginTop: hp('5.1%'), marginLeft: 0}]}
+      />
+      <TextMask
+        type={'credit-card'}
+        style={{borderBottomWidth: 0.5, marginTop: hp('3%')}}
+        value={value}
+        onChangeText={onChangeText}
+        // mask={'0000 0000 0000 0000'}
+      />
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   view: {
-    marginTop: hp("3.1%")
+    marginTop: hp('3.1%'),
   },
   input: {
     marginTop: hp('0.8%'),
     fontFamily: 'Avenir-Black',
     fontSize: 18,
-    color: '#24272B'
+    color: '#24272B',
+    borderColor: '#24272B',
   },
   row: {
     flexDirection: 'row',
-    marginTop: hp("3.1%")
+    marginTop: hp('3.1%'),
   },
   label: {
     fontFamily: 'Avenir-Book',
@@ -70,4 +120,4 @@ const styles = StyleSheet.create({
     color: '#3E4A59',
   },
 });
-export {TextField, TextFieldRow};
+export {CardInput, TextField, TextFieldRow};

@@ -1,27 +1,27 @@
 import React from 'react';
-import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
-import { HeaderText } from './Text'
-import { Icon } from './Icon';
-import { Actions } from 'react-native-router-flux';
+import {StyleSheet, TouchableOpacity, Text, View} from 'react-native';
+import {HeaderText} from './Text';
+import {Icon} from './Icon';
+import {Actions} from 'react-native-router-flux';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-const Header = ({ onPress, style, title }) => {
+const Header = ({onPress, style, title}) => {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, style]}>
       <TouchableOpacity
-        style={[styles.iconView, style]}
+        style={[styles.iconView]}
         onPress={onPress ? onPress : () => Actions.pop()}>
         <Icon name="BackIcon" width="12" height="21" viewBox="0 0 12 21" />
       </TouchableOpacity>
-      <HeaderText title={title} style={styles.headerText}/>
+      <HeaderText title={title} style={styles.headerText} />
     </View>
   );
 };
 
-export { Header };
+export {Header};
 
 const styles = StyleSheet.create({
   container: {
@@ -42,6 +42,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginTop: hp('1.7%'),
     color: '#43496A',
-    marginLeft: wp("25.5%")
-  }
+    marginLeft: wp('25.5%'),
+  },
 });
