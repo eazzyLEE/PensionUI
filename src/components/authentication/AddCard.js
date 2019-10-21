@@ -45,6 +45,7 @@ export default class AddCard extends Component {
             style={{marginTop: hp('5.1%')}}
             value={this.state.card_number}
             onChangeText={value => this.setState({card_number: value})}
+            keyboardType={'number-pad'}
             maxLength={19}
             onFocus={() => this.setState({focus: true})}
             focus={this.state.focus}
@@ -56,6 +57,10 @@ export default class AddCard extends Component {
             rightLabel="CVV"
             maxLength={5}
             leftOnChangeText={value => this.setState({exp: value})}
+            leftKeyboardType={'number-pad'}
+            rightKeyboardType={'number-pad'}
+            rightMaxLength={3}
+            secureTextEntry={true}
           />
           <Button
             title="ADD CARD"

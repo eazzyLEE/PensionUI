@@ -9,6 +9,7 @@ import {BookText} from './Text';
 
 const TextField = ({
   borderColor,
+  keyboardType,
   onBlur,
   onFocus,
   label,
@@ -38,6 +39,7 @@ const TextField = ({
           maxLength={maxLength}
           onFocus={onFocus}
           onBlur={onBlur}
+          keyboardType={keyboardType}
         />
       </Item>
     </View>
@@ -49,10 +51,13 @@ const TextFieldRow = ({
   labelStyle,
   leftOnChangeText,
   leftValue,
+  leftKeyboardType,
+  rightKeyboardType,
   rightOnChangeText,
   rightValue,
   rightLabel,
-  maxLength,
+  leftMaxLength,
+  rightMaxLength,
   secureTextEntry,
   style,
   value,
@@ -65,7 +70,8 @@ const TextFieldRow = ({
           style={styles.input}
           onChangeText={leftOnChangeText}
           value={leftValue}
-          maxLength={maxLength}
+          maxLength={leftMaxLength}
+          keyboardType={leftKeyboardType}
         />
       </Item>
       <Item floatingLabel style={{width: wp('39.3%'), marginLeft: wp('5.6%')}}>
@@ -74,6 +80,9 @@ const TextFieldRow = ({
           style={styles.input}
           onChangeText={rightOnChangeText}
           value={rightValue}
+          keyboardType={rightKeyboardType}
+          maxLength={rightMaxLength}
+          secureTextEntry={secureTextEntry}
         />
       </Item>
     </View>

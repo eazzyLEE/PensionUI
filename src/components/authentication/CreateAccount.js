@@ -31,8 +31,8 @@ export default class CreateAccount extends Component {
           />
           <TextField label={'Last Name'} />
           <TextField label={'Phone Number'} />
-          <TextField label={'Email Address'} />
-          <TextField label={'Bvn'} />
+          <TextField label={'Email Address'} keyboardType={'email-address'} />
+          <TextField label={'Bvn'} keyboardType={'number-pad'} />
           <Button
             title="CREATE ACCOUNT"
             buttonStyle={styles.createButton}
@@ -42,6 +42,7 @@ export default class CreateAccount extends Component {
             title="Already have an account?"
             subTitle="Login"
             style={styles.footer}
+            onPress={() => Actions.login()}
           />
         </KeyboardAwareScrollView>
       </View>

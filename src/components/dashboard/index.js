@@ -17,6 +17,10 @@ export default class Dashboard extends Component {
     StatusBar.setBackgroundColor('#edf5f7');
     StatusBar.setBarStyle('dark-content');
   }
+  componentWillUnmount() {
+    StatusBar.setBackgroundColor('#FFFFFF');
+  }
+
   render() {
     return (
       <View style={styles.background}>

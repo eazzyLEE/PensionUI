@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* PensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PensionUITests.m */; };
 		09BA7723A0504AEDBB8BF0D4 /* Avenir-Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DD7ACD18F034FC68DD6990C /* Avenir-Roman.ttf */; };
@@ -27,6 +28,7 @@
 		56D9E87B7C664D25AC2FC594 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D98EEDBDC8B54DEDB88828AE /* Fontisto.ttf */; };
 		57F70EB1B37D8838E2587C9E /* libPods-PensionUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EECB32AE497215617A03C3 /* libPods-PensionUITests.a */; };
 		71E9EB3C873E42D987BD3AA5 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6B569D095574FE396F5E8C6 /* MaterialIcons.ttf */; };
+		742D1071D7094F54B3AFF96A /* HongKong-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D328395BBDE4690B99D63EF /* HongKong-Bold.ttf */; };
 		7558BA8EF6B0A4F77A88FBE8 /* libPods-PensionUI-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7089060E983D45C98C1908 /* libPods-PensionUI-tvOS.a */; };
 		76350B86F7F34B36B7BF3C1C /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB5F7334F78B4D81BA040B41 /* FontAwesome5_Brands.ttf */; };
 		78319CAF44F34601A841D294 /* CircularStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A37FD0401EFB482484A8E30C /* CircularStd-Medium.ttf */; };
@@ -44,7 +46,6 @@
 		D8381B83F7229F8128181437 /* libPods-PensionUI-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA32FE57DF84C097E7911A4 /* libPods-PensionUI-tvOSTests.a */; };
 		E34568551A6B4006AEF8D315 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27D545267A134E8FBC1CCC4F /* SimpleLineIcons.ttf */; };
 		E6D68E55B31E44A987D648D7 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73BD7D581D4EA89AAFE310 /* AntDesign.ttf */; };
-		742D1071D7094F54B3AFF96A /* HongKong-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D328395BBDE4690B99D63EF /* HongKong-Bold.ttf */; };
 		EF769280C1044B40A303D105 /* CreditCard.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 950ED42786274DCA9B144A3E /* CreditCard.ttf */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +71,8 @@
 		00E356EE1AD99517003FC87E /* PensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* PensionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PensionUITests.m; sourceTree = "<group>"; };
-		1389DF0060BC4E42AB84AF3D /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
+		0D328395BBDE4690B99D63EF /* HongKong-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HongKong-Bold.ttf"; path = "../assets/fonts/HongKong-Bold.ttf"; sourceTree = "<group>"; };
+		1389DF0060BC4E42AB84AF3D /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* PensionUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PensionUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PensionUI/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PensionUI/AppDelegate.m; sourceTree = "<group>"; };
@@ -78,48 +80,47 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PensionUI/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PensionUI/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PensionUI/main.m; sourceTree = "<group>"; };
-		27D545267A134E8FBC1CCC4F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		27D545267A134E8FBC1CCC4F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* PensionUI-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PensionUI-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* PensionUI-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PensionUI-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		332EF4A28DE85BC798C367C9 /* Pods-PensionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PensionUITests.debug.xcconfig"; path = "Target Support Files/Pods-PensionUITests/Pods-PensionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		338D660F764CDD776094D9E8 /* Pods-PensionUI-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PensionUI-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-PensionUI-tvOSTests/Pods-PensionUI-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		46DD5206E5CF45518337CCE2 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		4D6A4BFBE0A844EF83160D83 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		46DD5206E5CF45518337CCE2 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		4D6A4BFBE0A844EF83160D83 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		50EECB32AE497215617A03C3 /* libPods-PensionUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PensionUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AC5DB4F99564EE1832720E0 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
-		5B7379FE2B4444C8A69BF37D /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		5AC5DB4F99564EE1832720E0 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
+		5B7379FE2B4444C8A69BF37D /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		684E8E668A025E90D7B58C17 /* Pods-PensionUI-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PensionUI-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-PensionUI-tvOSTests/Pods-PensionUI-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DA32FE57DF84C097E7911A4 /* libPods-PensionUI-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PensionUI-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DD7ACD18F034FC68DD6990C /* Avenir-Roman.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Roman.ttf"; path = "../assets/fonts/Avenir-Roman.ttf"; sourceTree = "<group>"; };
-		72340D98947440C4B49F7F9B /* Avenir-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Black.ttf"; path = "../assets/fonts/Avenir-Black.ttf"; sourceTree = "<group>"; };
+		6DD7ACD18F034FC68DD6990C /* Avenir-Roman.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Roman.ttf"; path = "../assets/fonts/Avenir-Roman.ttf"; sourceTree = "<group>"; };
+		72340D98947440C4B49F7F9B /* Avenir-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Black.ttf"; path = "../assets/fonts/Avenir-Black.ttf"; sourceTree = "<group>"; };
 		84EE10D227D99FC8963601C7 /* Pods-PensionUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PensionUI.debug.xcconfig"; path = "Target Support Files/Pods-PensionUI/Pods-PensionUI.debug.xcconfig"; sourceTree = "<group>"; };
 		85773C0D6DE59016B758269A /* Pods-PensionUI-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PensionUI-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-PensionUI-tvOS/Pods-PensionUI-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		8D51CA6F4B1645118302F452 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		93E67D247D524016942D78AA /* Avenir-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Medium.ttf"; path = "../assets/fonts/Avenir-Medium.ttf"; sourceTree = "<group>"; };
+		8D51CA6F4B1645118302F452 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		93E67D247D524016942D78AA /* Avenir-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Medium.ttf"; path = "../assets/fonts/Avenir-Medium.ttf"; sourceTree = "<group>"; };
+		950ED42786274DCA9B144A3E /* CreditCard.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = CreditCard.ttf; path = ../assets/fonts/CreditCard.ttf; sourceTree = "<group>"; };
 		96F434442ACBF0EE1F113609 /* Pods-PensionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PensionUITests.release.xcconfig"; path = "Target Support Files/Pods-PensionUITests/Pods-PensionUITests.release.xcconfig"; sourceTree = "<group>"; };
-		99E4ADD76EFB4072B28A0AE5 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		99E4ADD76EFB4072B28A0AE5 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		A184059F86F50BECFF7B8793 /* Pods-PensionUI-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PensionUI-tvOS.release.xcconfig"; path = "Target Support Files/Pods-PensionUI-tvOS/Pods-PensionUI-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		A37FD0401EFB482484A8E30C /* CircularStd-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Medium.ttf"; path = "../assets/fonts/CircularStd-Medium.ttf"; sourceTree = "<group>"; };
-		A700659308004390B0CF4B8E /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
-		A80A60B2D2E14CC8836767AD /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		A37FD0401EFB482484A8E30C /* CircularStd-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Medium.ttf"; path = "../assets/fonts/CircularStd-Medium.ttf"; sourceTree = "<group>"; };
+		A700659308004390B0CF4B8E /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
+		A80A60B2D2E14CC8836767AD /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		AC7089060E983D45C98C1908 /* libPods-PensionUI-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PensionUI-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF1CA939E75E41F3BD975315 /* CircularStd-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Book.ttf"; path = "../assets/fonts/CircularStd-Book.ttf"; sourceTree = "<group>"; };
-		B3EC242294074628B6EB098A /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		B6B569D095574FE396F5E8C6 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		B9FFBE9EEECD42D69A17D593 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		AF1CA939E75E41F3BD975315 /* CircularStd-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Book.ttf"; path = "../assets/fonts/CircularStd-Book.ttf"; sourceTree = "<group>"; };
+		B3EC242294074628B6EB098A /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		B6B569D095574FE396F5E8C6 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		B9FFBE9EEECD42D69A17D593 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		C73ECB2E3CD4547BA79B8C2B /* Pods-PensionUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PensionUI.release.xcconfig"; path = "Target Support Files/Pods-PensionUI/Pods-PensionUI.release.xcconfig"; sourceTree = "<group>"; };
-		CC73BD7D581D4EA89AAFE310 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		D2958607D3114B499A2BC1B2 /* Avenir-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Book.ttf"; path = "../assets/fonts/Avenir-Book.ttf"; sourceTree = "<group>"; };
-		D53B2AE003A9488E84050575 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		CC73BD7D581D4EA89AAFE310 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		D2958607D3114B499A2BC1B2 /* Avenir-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Book.ttf"; path = "../assets/fonts/Avenir-Book.ttf"; sourceTree = "<group>"; };
+		D53B2AE003A9488E84050575 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		D7502F5B03026296E362042A /* libPods-PensionUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PensionUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D98EEDBDC8B54DEDB88828AE /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		D98EEDBDC8B54DEDB88828AE /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EF35FC6A32974CCE8B83EF80 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		EFD455A63ADD4D6C928F51CE /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		FB5F7334F78B4D81BA040B41 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		0D328395BBDE4690B99D63EF /* HongKong-Bold.ttf */ = {isa = PBXFileReference; name = "HongKong-Bold.ttf"; path = "../assets/fonts/HongKong-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		950ED42786274DCA9B144A3E /* CreditCard.ttf */ = {isa = PBXFileReference; name = "CreditCard.ttf"; path = "../assets/fonts/CreditCard.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EF35FC6A32974CCE8B83EF80 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		EFD455A63ADD4D6C928F51CE /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		FB5F7334F78B4D81BA040B41 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +202,6 @@
 				332EF4A28DE85BC798C367C9 /* Pods-PensionUITests.debug.xcconfig */,
 				96F434442ACBF0EE1F113609 /* Pods-PensionUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -250,7 +250,6 @@
 				950ED42786274DCA9B144A3E /* CreditCard.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -381,6 +380,10 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 35N43ZF2D6;
+						ProvisioningStyle = Automatic;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -397,6 +400,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -742,8 +746,11 @@
 			baseConfigurationReference = 84EE10D227D99FC8963601C7 /* Pods-PensionUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 35N43ZF2D6;
 				INFOPLIST_FILE = PensionUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -751,8 +758,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eazzy.PensionUI;
 				PRODUCT_NAME = PensionUI;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -762,7 +771,10 @@
 			baseConfigurationReference = C73ECB2E3CD4547BA79B8C2B /* Pods-PensionUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35N43ZF2D6;
 				INFOPLIST_FILE = PensionUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -770,8 +782,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eazzy.PensionUI;
 				PRODUCT_NAME = PensionUI;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

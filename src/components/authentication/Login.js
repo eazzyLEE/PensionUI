@@ -11,6 +11,7 @@ import {
 import {loginStyles as styles} from './styles';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {Actions} from 'react-native-router-flux';
 
 export default class Login extends Component {
   render() {
@@ -23,7 +24,7 @@ export default class Login extends Component {
             label={'My Email/Phone Number/My RSA Pin'}
             style={{marginTop: hp('5.1%')}}
           />
-          <TextField label={'My Password'} />
+          <TextField label={'My Password'} secureTextEntry={true} />
           <ParagraphText
             title={'Forgot your Password?'}
             style={styles.forgot}
@@ -33,6 +34,7 @@ export default class Login extends Component {
             title="New user?"
             subTitle="Create account"
             style={styles.footer}
+            onPress={() => Actions.create_account()}
           />
         </KeyboardAwareScrollView>
       </View>

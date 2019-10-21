@@ -49,7 +49,6 @@ export const homeStyles = StyleSheet.create({
   },
   jumbo: {
     backgroundColor: '#edf5f7',
-    // justifyContent: 'center',
     alignItems: 'center',
     height: hp('45.1%'),
     width: wp('100%'),
